@@ -117,7 +117,7 @@ class SubtitleBase {
           if (download_started) return;
 
           download_started = true;
-          console.log('Fastest: ', url.substr(0, 24));
+          console.log('Fastest: ', url);
           this._extract(fetch(url)).then(() => resolve());
         });
       });
